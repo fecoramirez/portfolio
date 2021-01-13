@@ -1,0 +1,62 @@
+<html>
+
+<div id="signature-preview-workspace" class="panel-body">				
+		<h3> Signature preview </h3>
+		<!-- ngInclude: --><ng-include id="signaturePreview" src="selectedTemplatePath" class="ng-scope"><!--UNCOMMENT <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML><HEAD><TITLE>Email Signature</TITLE>
+<META content="text/html; charset=utf-8" http-equiv="Content-Type">
+</HEAD>
+<BODY style="font-size: 10pt; font-family: Arial, sans-serif;">
+UNCOMMENT-->
+<table style="width: 515px; font-size: 10pt; font-family: Arial, sans-serif;" cellpadding="0" cellspacing="0" class="ng-scope">
+  <tbody>
+  <tr>
+    <td style="font-size: 14pt;  color:#000e58; font-family: Arial, sans-serif; width: 514px; padding-bottom: 10px; vertical-align:top;" valign="top" colspan="2">
+	  <strong><span style="font-size: 14pt; font-family: Arial, sans-serif; color:#000e58;" class="ng-binding">Juan Díez Gangas</span></strong><br>
+	  <span style="font-size: 10pt; font-family: Arial, sans-serif; color:#787878;" class="ng-binding">Gerente de planificación y desarrollo</span>
+	</td>
+  </tr>
+  <tr>
+	<td style="font-size: 10pt; border-top: 1px solid; border-top-color: #000e58; color:#2c2c2c; font-family: Arial, sans-serif;  padding-top: 10px; vertical-align:top;" valign="top" colspan="2">
+     <!-- ngIf: showField('company') --><span ng-if="showField('company')" style="font-size: 10pt; font-family: Arial, sans-serif; color:#707070" class="ng-scope"><strong class="ng-binding">Alianza Inmobiliaria</strong><br></span><!-- end ngIf: showField('company') --> 
+     <!-- ngIf: showField('address1') --><span ng-if="showField('address1')" style="font-size: 10pt; font-family: Arial, sans-serif; color:#707070" class="ng-binding ng-scope">Almirante Lord Nelson 410, Miraflores<br></span><!-- end ngIf: showField('address1') -->
+     <!-- ngIf: showField('address2') -->
+     
+     <!-- ngIf: showField('mobile') --><span ng-if="showField('mobile')" style="font-size: 10pt; font-family: Arial, sans-serif; color:#707070" class="ng-binding ng-scope">m: 977 530 060<br></span><!-- end ngIf: showField('mobile') -->
+     <!-- ngIf: showField('email') --><span ng-if="showField('email')" style="font-size: 10pt; font-family: Arial, sans-serif; color:#707070;" class="ng-binding ng-scope">e: jdiez@alianzainmob.com<br></span><!-- end ngIf: showField('email') -->								
+	</td>
+  </tr>  
+  <tr>
+    <!-- ngIf: showField('website') --><td ng-if="showField('website')" style="font-size: 10pt; padding-bottom: 10px; padding-top: 10px; vertical-align:top;" valign="top" class="ng-scope"><strong>
+		<a href="http://www.alianzainmob.com" target="_blank" rel="noopener" style="text-decoration:none;"><span style="color:#000e58; font-family: Arial, sans-serif;"><span style="font-size: 10pt; font-family: Arial, sans-serif; color:#000e58;" class="ng-binding">www.alianzainmob.com</span></span></a></strong>
+	</td><!-- end ngIf: showField('website') -->
+    <!-- ngIf: showField('website') --><td ng-if="showField('website')" style="font-size: 10pt; font-family: Arial, sans-serif; padding-bottom: 10px; padding-top: 10px; vertical-align:top; text-align:right;" valign="top" align="right" class="ng-scope">
+     <!-- ngIf: showField('facebookURL') --><!-- ngIf: showField('linkedinURL') --><!-- ngIf: showField('twitterURL') --><!-- ngIf: showField('gplusURL') --><!-- ngIf: showField('youtubeURL') --><!-- ngIf: showField('instagramURL') -->										
+	 </td><!-- end ngIf: showField('website') -->
+	<!-- ngIf: !showField('website') -->	 	 	
+  </tr>
+  <!-- ngIf: showField('banner') --><tr ng-if="showField('banner')" class="ng-scope">
+    <td style="font-size: 10pt; font-family: Arial, sans-serif; padding-bottom: 10px; padding-top: 10px; vertical-align:top;" valign="top" colspan="2">	
+     <!-- ngIf: showField('bannerURL') && showField('banner') --><a ng-if="showField('bannerURL') &amp;&amp; showField('banner')" href="https://www.alianzainmob.com" target="_blank" rel="noopener" class="ng-scope">
+      <img border="0" alt="Banner" width="514" style="width:514px; height:auto; border:0;" src="https://www.alianzainmob.com/img/banner_alianzainmob.jpg" ng-src="https://www.alianzainmob.com/img/banner_alianzainmob.jpg">
+     </a><!-- end ngIf: showField('bannerURL') && showField('banner') -->	
+	 <!-- ngIf: !showField('bannerURL') && showField('banner') -->
+	</td>
+  </tr><!-- end ngIf: showField('banner') -->
+  <tr>
+    <!-- ngIf: showField('disclaimer') --><td ng-if="showField('disclaimer')" style="font-size: 10pt; color:#2c2c2c; font-family: Arial, sans-serif; padding-top: 10px; vertical-align:top;" valign="top" colspan="2" class="ng-scope">      
+     <div style="color:#707070; font-size: 9pt; font-family: Arial, sans-serif; text-align:justify; width:514px;" align="justify" class="ng-binding">Si no es necesario, no imprima este mensaje. Cuidar el medio ambiente es cosa de todos. Este correo electrónico contiene información privada y estrictamente confidencial. Si usted no es el destinatario del presente mensaje no está autorizado a leerlo, retenerlo o difundirlo.
+
+This e-mail is privileged, confidential and contains private information. Any reading, retention, distribution or copying of this communication by any person other than its intended recipient is prohibited.</div>
+	</td><!-- end ngIf: showField('disclaimer') -->
+  </tr>
+  </tbody>
+ </table>
+<!--UNCOMMENT</BODY></HTML>UNCOMMENT--></ng-include>		
+	</div>
+
+
+
+<!-- Keep Pasted Code Above This Line!
+_________________________________________________________________________________ -->
+</html>
