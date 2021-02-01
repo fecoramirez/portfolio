@@ -1,0 +1,16 @@
+{
+"companyName": "Terremoto2007",
+"productName": "Palta Fuerte",
+"productVersion": "1",
+"dataUrl": "Build WebGL Low.data.unityweb",
+"wasmCodeUrl": "Build WebGL Low.wasm.code.unityweb",
+"wasmFrameworkUrl": "Build WebGL Low.wasm.framework.unityweb",
+"graphicsAPI": ["WebGL 2.0","WebGL 1.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Dark",
+"backgroundColor": "#231F20",
+"cacheControl": {"default": "must-revalidate"},
+"developmentBuild": false,
+"multithreading": false,
+"unityVersion": "2019.4.18f1"
+}
